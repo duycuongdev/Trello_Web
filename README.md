@@ -1,94 +1,97 @@
-# 🐟 Trello Web
+# 📝 Trello Web
 
-Một ứng dụng web React hiện đại được xây dựng với [Vite](https://vitejs.dev/), sử dụng Material UI, Axios, và nhiều công cụ hỗ trợ phát triển mạnh mẽ.
-
----
-
-## 🚀 Tính năng chính
-
-- ⚡️ Build siêu nhanh với Vite
-- 🎨 Giao diện đẹp mắt với Material UI
-- 🔄 Giao tiếp API dễ dàng với Axios
-- 🔔 Thông báo toast với React Toastify
-- ✅ Kiểm tra code với ESLint
-- 🔧 Hỗ trợ SVG như React component với vite-plugin-svgr
+Một ứng dụng web lấy cảm hứng từ Trello, được xây dựng bằng hệ sinh thái React hiện đại và Material UI. Ứng dụng cung cấp giao diện trực quan và các tính năng kéo thả (drag and drop) mượt mà để quản lý công việc hiệu quả.
 
 ---
 
-## 📦 Cài đặt
+## 🚀 Công nghệ sử dụng
 
-```bash
-# Clone dự án
-git clone https://github.com/your-username/fish-web.git
-cd fish-web
-
-# Cài đặt dependencies
-yarn install
-Dưới đây là một file README.md mẫu dành cho dự án của bạn – một ứng dụng React sử dụng Vite, Material UI, và các công cụ hiện đại khác:
-# 🐟 Fish Web
-
-Một ứng dụng web React hiện đại được xây dựng với [Vite](https://vitejs.dev/), sử dụng Material UI, Axios, và nhiều công cụ hỗ trợ phát triển mạnh mẽ.
+- **Core:** React 18, Vite
+- **UI Framework:** Material UI (MUI v5)
+- **Drag & Drop:** `@dnd-kit` (Core, Sortable, Utilities)
+- **State Management:** Redux Toolkit & Redux Persist
+- **Routing:** React Router v6
+- **Data Fetching:** Axios
+- **Form Handling:** React Hook Form
+- **Notifications:** React Toastify
+- **Utils:** Lodash, tsParticles
 
 ---
 
-## 🚀 Tính năng chính
+## 📦 Yêu cầu môi trường
 
-- ⚡️ Build siêu nhanh với Vite
-- 🎨 Giao diện đẹp mắt với Material UI
-- 🔄 Giao tiếp API dễ dàng với Axios
-- 🔔 Thông báo toast với React Toastify
-- ✅ Kiểm tra code với ESLint
-- 🔧 Hỗ trợ SVG như React component với vite-plugin-svgr
+- Node.js >= 18.x
+- Yarn hoặc npm
 
 ---
 
-## 📦 Cài đặt
+## 🛠️ Cài đặt và Chạy dự án
 
-```bash
-# Clone dự án
-git clone https://github.com/your-username/fish-web.git
-cd fish-web
+1. **Clone dự án**
+   ```bash
+   git clone <your-repo-url>
+   cd trello-web
+   ```
 
-# Cài đặt dependencies
-yarn install
+2. **Cài đặt dependencies**
+   ```bash
+   yarn install
+   # hoặc npm install
+   ```
 
-
+3. **Cấu hình biến môi trường**
+   Tạo file `.env` ở thư mục gốc (hoặc copy từ `.env.example` nếu có) và cấu hình các biến cần thiết (ví dụ: VITE_API_URL, ...).
 
-🧪 Chạy dự án
-yarn dev
+4. **Chạy server phát triển (Development)**
+   ```bash
+   yarn dev
+   # hoặc npm run dev
+   ```
+   Ứng dụng sẽ chạy tại: `http://localhost:5173`
 
+5. **Build cho Production**
+   ```bash
+   yarn build
+   # hoặc npm run build
+   ```
+   Kết quả build sẽ nằm trong thư mục `dist/`.
 
-Ứng dụng sẽ chạy tại: http://localhost:5173
+6. **Kiểm tra Lint (Code Quality)**
+   ```bash
+   yarn lint
+   # hoặc npm run lint
+   ```
 
-🏗️ Build production
-yarn build
+---
 
+## 📁 Cấu trúc thư mục (Gợi ý)
 
-Kết quả sẽ nằm trong thư mục dist/.
-
-🔍 Kiểm tra lint
-yarn lint
-
-
-
-📁 Cấu trúc thư mục (gợi ý)
-fish-web/
+```text
+trello-web/
 ├── public/
 ├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── pages/
-│   ├── services/
+│   ├── assets/        # Hình ảnh, icons, ...
+│   ├── components/    # Các UI component dùng chung
+│   ├── pages/         # Các trang chính (Board, Auth, ...)
+│   ├── redux/         # Setup Redux Toolkit (slices, store)
+│   ├── router/        # Cấu hình routing
+│   ├── services/      # Giao tiếp API bằng Axios
+│   ├── utils/         # Các hàm tiện ích
 │   ├── App.jsx
 │   └── main.jsx
-├── .eslintrc.js
+├── .env
 ├── vite.config.js
 └── package.json
+```
 
+---
 
+## 🧑‍💻 Tác giả
 
-🧑‍💻 Tác giả
-- 👤 Duy Cường
+- **Duy Cuong** 
 
-📜 Giấy phép
-Dự án này sử dụng giấy phép MIT.
+---
+
+## 📜 Giấy phép
+
+Dự án sử dụng giấy phép MIT.
